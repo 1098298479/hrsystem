@@ -2,10 +2,11 @@ package edu.ecit.bean;
 
 import java.io.Serializable;
 
-
 public class MenuMeta implements Serializable {
 
+    //保持连接
     private boolean keepAlive;
+    //
     private boolean requireAuth;
 
     public boolean isKeepAlive() {

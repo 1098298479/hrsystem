@@ -1,12 +1,20 @@
 package edu.ecit.bean;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
+/**
+ * 职称表
+ */
+public class JobLevel implements Serializable{
 
-public class JobLevel {
+    //编号Id
     private Long id;
+    //职称
     private String name;
+    //
     private String titleLevel;
+    //创建日期
     private Timestamp createDate;
 
     @Override
@@ -64,4 +72,5 @@ public class JobLevel {
     public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
     }
+
 }

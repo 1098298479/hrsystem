@@ -9,19 +9,34 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-
+/**
+ * hr的基本信息
+ */
 public class Hr implements UserDetails {
+    //Hr编号
     private Long id;
+    //姓名
     private String name;
+    //座机号码
     private String phone;
+    //手机号码
     private String telephone;
+    //家庭地址
     private String address;
+    //启用 禁用
     private boolean enabled;
+    //登录使用
+    //用户名
     private String username;
+    //密码
     private String password;
+    //备注
     private String remark;
+    //角色
     private List<Role> roles;
+    //头像
     private String userface;
+
     @Override
     public boolean isEnabled() {
         return enabled;
@@ -52,7 +67,7 @@ public class Hr implements UserDetails {
         for (Role role : roles) {
             authorities.add(new SimpleGrantedAuthority(role.getName()));
         }
-        return authorities;
+        return authorities;//权限
     }
     @JsonIgnore
     @Override

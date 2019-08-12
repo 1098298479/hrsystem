@@ -1,6 +1,8 @@
 package edu.ecit.bean;
 
-
+/**
+ * 政治面貌
+ */
 public class PoliticsStatus {
     private Long id;
     private String name;

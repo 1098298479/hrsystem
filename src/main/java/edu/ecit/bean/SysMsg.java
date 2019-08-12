@@ -2,6 +2,7 @@ package edu.ecit.bean;
 
 
 public class SysMsg {
+
     private Long id;
     private Long mid;
     private Integer type;

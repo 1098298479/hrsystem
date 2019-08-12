@@ -4,8 +4,11 @@ import java.io.Serializable;
 
 
 public class Role implements Serializable {
+    //角色ID
     private Long id;
+    //角色名
     private String name;
+    //
     private String nameZh;
 
     public String getNameZh() {

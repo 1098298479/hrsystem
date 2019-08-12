@@ -6,17 +6,27 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.List;
 
-
 public class Menu implements Serializable {
+
+    //菜单ID
     private Long id;
+    //链接地址
     private String url;
+    //
     private String path;
+
     private Object component;
+    //菜单名
     private String name;
+
     private String iconCls;
+    //父ID
     private Long parentId;
+    //
     private List<Role> roles;
+    //子菜单
     private List<Menu> children;
+    //
     private MenuMeta meta;
 
     public MenuMeta getMeta() {

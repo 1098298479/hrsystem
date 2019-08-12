@@ -2,8 +2,11 @@ package edu.ecit.bean;
 
 import java.sql.Timestamp;
 
-
+/**
+ *
+ */
 public class Position {
+
     private Long id;
     private String name;
     private Timestamp createDate;

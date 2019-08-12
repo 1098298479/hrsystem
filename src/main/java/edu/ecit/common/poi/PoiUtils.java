@@ -18,14 +18,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * excel存入 导出
+ */
 public class PoiUtils {
 
     public static ResponseEntity<byte[]> exportEmp2Excel(List<Employee> emps) {
         HttpHeaders headers = null;
         ByteArrayOutputStream baos = null;
         try {
-            //1.创建Excel文档
+            //1.创建Excel文档对象
             HSSFWorkbook workbook = new HSSFWorkbook();
             //2.创建文档摘要
             workbook.createInformationProperties();
@@ -34,7 +36,7 @@ public class PoiUtils {
             //3.1文档类别
             dsi.setCategory("员工信息");
             //3.2设置文档管理员
-            dsi.setManager("江南一点雨");
+            dsi.setManager("邵烽烽");
             //3.3设置组织机构
             dsi.setCompany("XXX集团");
             //4.获取摘要信息并配置
@@ -44,7 +46,7 @@ public class PoiUtils {
             //4.2.设置文档标题
             si.setTitle("员工信息");
             //4.3 设置文档作者
-            si.setAuthor("XXX集团");
+            si.setAuthor("邵烽烽");
             //4.4设置文档备注
             si.setComments("备注信息暂无");
             //创建Excel表单

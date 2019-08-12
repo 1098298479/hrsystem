@@ -1,5 +1,8 @@
 package edu.ecit.bean;
 
+/**
+ * 响应结果
+ */
 public class RespBean {
     private Integer status;
     private String msg;

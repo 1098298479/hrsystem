@@ -1,11 +1,17 @@
 package edu.ecit.bean;
 
+import java.io.Serializable;
 
-public class ChatResp {
+/**
+ * 聊天回复
+ */
+public class ChatResp implements Serializable{
+
     private String msg;
     private String from;
 
     public ChatResp() {
+
     }
 
     public ChatResp(String msg, String from) {

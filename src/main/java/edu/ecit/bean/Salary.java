@@ -2,13 +2,25 @@ package edu.ecit.bean;
 
 import java.util.Date;
 
+/**
+ * 员工工资表
+ */
 public class Salary {
+
+    //工资表编号
     private Integer id;
+    //奖金
     private Integer bonus;
+    //午餐补贴
     private Integer lunchSalary;
+    //交通补贴
     private Integer trafficSalary;
+    //基本工资
     private Integer basicSalary;
+    //总工资
     private Integer allSalary;
+    //五险一金
+
     private Integer pensionBase;
     private Float pensionPer;
     private Date createDate;

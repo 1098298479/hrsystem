@@ -1,12 +1,18 @@
 package edu.ecit.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
-public class MsgContent {
+public class MsgContent implements Serializable{
+
+    //消息ID
     private Long id;
+    //信息
     private String message;
+    //标题
     private String title;
+    //创建时间
     private Date createDate;
 
     public String getTitle() {

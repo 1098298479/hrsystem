@@ -2,42 +2,81 @@ package edu.ecit.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Employee {
+/**
+ * 员工的基本信息表
+ */
+public class Employee implements Serializable {
+
+    //员工编号
     private Long id;
+    //员工姓名
     private String name;
+    //性别
     private String gender;
+    //出生日期
     private Date birthday;
+    //身份证号
     private String idCard;
+    //婚姻状况
     private String wedlock;
+    //名族编号
     private Long nationId;
+    //名族名
     private String nationName;
+    //机关
     private String nativePlace;
+    //政治面貌
     private String politicName;
+    //政治面貌ID
     private Long politicId;
+    //电子邮件
     private String email;
+    //联系电话
     private String phone;
+    //联系地址
     private String address;
+    //部门ID
     private Long departmentId;
+    //部门名
     private String departmentName;
+    //职位ID
     private Long jobLevelId;
+    //职位
     private String jobLevelName;
+    //职称ID
     private Long posId;
+    //职称名
     private String posName;
+    //聘用形式
     private String engageForm;
+    //最高学历
     private String tiptopDegree;
+    //所属专业
     private String specialty;
+    //毕业院校
     private String school;
+    //入职日期
     private Date beginDate;
+    //在职状态
     private String workState;
+    //工号
     private String workID;
+    //合同期限
     private Double contractTerm;
+    //转正日期
     private Date conversionTime;
+    //离职日期
     private Date notWorkDate;
+    //合同开始时间
     private Date beginContract;
+    //合同终止时间
     private Date endContract;
+    //工龄
     private Integer workAge;
+
     private Department department;
     private Nation nation;
     private JobLevel jobLevel;

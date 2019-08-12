@@ -1,8 +1,13 @@
 package edu.ecit.bean;
 
-
+/**
+ * 名族表
+ */
 public class Nation {
+
+    //名族ID
     private Long id;
+    //名族名
     private String name;
 
     public Nation(String name) {
